@@ -27,6 +27,10 @@
 \definecolor{backgroundColour}{rgb}{0.95,0.95,0.92}
 
 \begin{document}
+\newcommand{\MammalRace}[1]{Being bipedal mammals without tails, {#1} have two hands and two legs, meaning that they can wield only two one-handed weapons \textit{(or a one-handed weapon and a shield)} or a single two-handed weapon at the same time. Just like with other bipedal mammalian races, reaching zero hitpoints on the arms or legs renders those limbs unusable \textit{(and disables the corresponding item slots)}, while reaching zero hitpoints at the torso or head means death - or unconsciousness, if house rules rule out death.}
+\newcommand{\Bonus}[1]{\textcolor{green}{\textbf{+{#1} bonus}}}
+\newcommand{\Malus}[1]{\textcolor{red}{\textbf{-{#1} malus}}}
+\newcommand{\DimorphismBB}[5]{Male {#1} get a \Bonus{{#2}} to {#3}, while Female {#1} get a \Bonus{{#4}} to {#5}.}
 \maketitle
 \tableofcontents
 \chapter*{Preface}
@@ -52,16 +56,64 @@ Currently, as of 831 AEKE \textit{(831 years after the establishment of the King
 \textbf{Willpower} & 8 & 18 \\ \hline
 \textbf{Charisma} & 8 & 18 \\ \hline
 \end{tabular}\newline
-Male humans get a \textcolor{green}{\textbf{+1 bonus}} to Strength and Endurance, while human females get a \textcolor{green}{\textbf{+1 bonus}} to Dexterity and Charisma. Being bipedal mammals without tails, humans have two hands and two legs, meaning that they can wield only two one-handed weapons \textit{(or a one-handed weapon and a shield)} or a single two-handed weapon at the same time. Just like with other bipedal mammalian races, reaching zero hitpoints on the arms or legs renders those limbs unusable \textit{(and disables the corresponding item slots)}, while reaching zero hitpoints at the torso or head means death - or unconsciousness, if house rules rule out death.
+\DimorphismBB{Humans}{1}{Strength and Endurance}{1}{Dexterity and Charisma} \MammalRace{humans}
 \section{High Elves}
-\includegraphics{High_Elves}
+\includegraphics{High_Elves}\newline
+\textbf{High Elves} are the dominant race of the \textbf{Kingdom of Froturn} and have a plurality in the \textbf{Empire of Neressa}, albeit their political influence expands far beyond, to the point that the Humans have adopted their religion over eight centuries ago! They have rather long lifespans, theoretically ten times that of a human \textit{(and they're also typically taller than humans, not to mention their sharp ears)}, ageing at one tenth a human's rate after reaching the age of eighteen. They descendants of those Ancestral Elves who crossed over from the Orient to colonize the Occident, making them a sister-race to the Wood Elves and Humans, who also directly evolved out of those Ancestral Elves.\newline
+\begin{tabular}{|c|c|c|}
+\hline
+ & \textbf{Min} & \textbf{Max} \\ \hline
+\textbf{Strength} & 8 & 18 \\ \hline
+\textbf{Endurance} & 7 & 17 \\ \hline
+\textbf{Dexterity} & 9 & 19 \\ \hline
+\textbf{Intelligence} & 8 & 18 \\ \hline
+\textbf{Willpower} & 8 & 18 \\ \hline
+\textbf{Charisma} & 9 & 19 \\ \hline
+\end{tabular}\newline
+\DimorphismBB{High Elves}{1}{Strength}{1}{Charisma} \MammalRace{High Elves}
 \section{Wood Elves}
-\includegraphics{Wood_Elves}
+\includegraphics{Wood_Elves}\newline
+\textbf{Wood Elves} are the dominant race of the \textbf{Kingdom of Dragoc}. They have rather long lifespans, theoretically ten times that of a human \textit{(and they're also typically taller than humans, not to mention their sharp ears)}, ageing at one tenth a human's rate after reaching the age of eighteen. They descendants of those Ancestral Elves who crossed over from the Orient to colonize the Occident, making them a sister-race to the High Elves and Humans, who also directly evolved out of those Ancestral Elves.\newline
+\begin{tabular}{|c|c|c|}
+\hline
+ & \textbf{Min} & \textbf{Max} \\ \hline
+\textbf{Strength} & 8 & 18 \\ \hline
+\textbf{Endurance} & 7 & 17 \\ \hline
+\textbf{Dexterity} & 9 & 19 \\ \hline
+\textbf{Intelligence} & 8 & 18 \\ \hline
+\textbf{Willpower} & 8 & 18 \\ \hline
+\textbf{Charisma} & 8 & 18 \\ \hline
+\end{tabular}\newline
+\DimorphismBB{Wood Elves}{2}{Strength}{2}{Charisma} \MammalRace{Wood Elves}
 \section{Dark Elves}
-\includegraphics{Dark_Elves}
-\section{Half Elves}
-\includegraphics{Half_Elves}
-\section{Half Orcs}
+\includegraphics{Dark_Elves}\newline
+\textbf{Dark Elves} are a race without a unified country, living in underground clans in dungeon-cities below the the ground, though also being present in several surface states - namely the Kingdoms of Etrand and Froturn - in high numbers as diaspora. They have rather long lifespans, theoretically ten times that of a human \textit{(and they're also typically taller than humans, not to mention their sharp ears and blue-ish grey skin)}, ageing at one tenth a human's rate after reaching the age of eighteen. They descendants of Wood Elves and High Elves who were banished after experimenting with the dark arts, creating their own exodus, where the environment - and the new religion - has altered their appearence.\newline
+\begin{tabular}{|c|c|c|}
+\hline
+ & \textbf{Min} & \textbf{Max} \\ \hline
+\textbf{Strength} & 8 & 18 \\ \hline
+\textbf{Endurance} & 7 & 17 \\ \hline
+\textbf{Dexterity} & 10 & 20 \\ \hline
+\textbf{Intelligence} & 8 & 18 \\ \hline
+\textbf{Willpower} & 8 & 18 \\ \hline
+\textbf{Charisma} & 8 & 18 \\ \hline
+\end{tabular}\newline
+\DimorphismBB{Dark Elves}{1}{Strength}{1}{Charisma} \MammalRace{Dark Elves}
+\section{Half-Elves}
+\includegraphics{Half_Elves}\newline
+\textbf{Half-Elves} are hybrids of Humans and any of the aforementioned Elven races \textit{(High Elves, Wood Elves, Dark Elves)}. To be specific, this race only includes only \textit{``clean hybrids''} - as in, people with 45-55\% Human blood and 45-55\% Elven blood. People where one side dominates - whether it's the Human side or Elven side - are classified as \textit{``unclean hybrids''}, and thus get shoehorned into the Human or Elven race.\newline
+\begin{tabular}{|c|c|c|}
+\hline
+ & \textbf{Min} & \textbf{Max} \\ \hline
+\textbf{Strength} & 8 & 18 \\ \hline
+\textbf{Endurance} & 8 & 18 \\ \hline
+\textbf{Dexterity} & 9 & 19 \\ \hline
+\textbf{Intelligence} & 8 & 18 \\ \hline
+\textbf{Willpower} & 8 & 18 \\ \hline
+\textbf{Charisma} & 8 & 18 \\ \hline
+\end{tabular}\newline
+\DimorphismBB{Half-Elves}{1}{Strength}{1}{Charisma} \MammalRace{Half-Elves}
+\section{Half-Orcs}
 \includegraphics{Half_Orcs}
 \section{Orcs}
 \includegraphics{Orks}
